@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    scroll-behavior: smooth;
+}
+/* ------------------ */
+/* menu de navegacion */
+/* ------------------ */
+nav{
+    height: 100vh;
+    position:fixed;
+    width: 20em;
+    background-color: white;
+    padding: 15em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.2);
+}
+.navegacion{
+    text-decoration: none;
+    color:gray;
+    padding: 1em 0;
+}
+/* ---------------------- */
+/* secciones de cada tema */
+/* ---------------------- */
+.seccion {
+    height: 100vh;
+    margin-left:20em;
+    border-top: 5em solid white;
+    border-bottom: 5em solid white;
+    background-color: rgb(220, 219, 219);
+}
+
+#inicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#inicio img{
+    height: 30em;
+    border-radius: 100%;
+}
+#inicio div h3{
+    color: gray;
+    font-weight: 100;
+}
+#inicio div h1{
+    font-size:4em;
+}
