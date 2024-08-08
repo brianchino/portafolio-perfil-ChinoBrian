@@ -16,7 +16,7 @@ nav{
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 0 10px rgba(0, 0, 0,0.5);
 }
 .navegacion{
     text-decoration: none;
@@ -27,13 +27,15 @@ nav{
 .navegacion:hover{
     color:white;
     background-color: rgb(70, 70, 70);
+    box-shadow: 0px 0px 10px black;
     transition: all 0.5s ease;
+    
 }
 /* ---------------------- */
 /* secciones de cada tema */
 /* ---------------------- */
 .seccion {
-    height: 100vh;
+    min-height: 100vh;
     margin-left:20em;
     border-top: 5em solid white;
     border-bottom: 5em solid white;
@@ -103,7 +105,7 @@ nav{
     box-shadow: 30px 30px 5px rgb(79, 110, 236);
 }
 #acercaDeMi div{
-    height: 20em;
+    height: 25em;
     width: 30em;
     margin: auto;
     display:flex;
@@ -121,12 +123,60 @@ nav{
     background-color: rgb(42, 57, 223);
     padding: 20px;
     border-radius: 10px;
+    font-family:'Arial Narrow Bold', sans-serif;
 }
 #acercaDeMi a:hover{
     background-color: rgb(24, 34, 137);
     transform: scale(1.1,1.1);
     transition: all 0.5s ease ;
 }
+.titulo{
+    border-bottom: 3px solid rgb(0, 0, 196);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* ------------------------------------------------------------ */
+#proyectos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin: 50px;
+}
+#portafolio h2{
+    text-align: center;
+    width: 110px;
+    margin: 10px auto;
+}
+.proyecto-tarjeta{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+.proyecto-tarjeta h3{
+    text-align: center;
+    height: 2em;
+}
+.proyecto-tarjeta p{
+    margin-top:10px;
+    color:gray;
+}
+.proyecto-tarjeta:hover{
+    background-color: rgb(42, 57, 223);
+    color:white;
+    transform: scale(1.1,1.1);
+    transition: all 0.5s ease;
+}
+.proyecto-tarjeta:hover p{
+    color: white;
+}
+.proyecto-tarjeta:hover h3{
+
+    border-bottom: 3px solid white;
+}
+
+
 
 
 
