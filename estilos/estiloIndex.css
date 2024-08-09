@@ -175,6 +175,56 @@ nav{
 
     border-bottom: 3px solid white;
 }
+/* ------------------------------------------------- */
+#contactame h3 {
+    font-size: xx-large;
+    margin: 20px auto;
+    width:220px;
+}
+#contact-form {
+    width:40em;
+    background-color: #f0f4f8; 
+    margin:7em auto;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    border: 1px solid #333; 
+}
+input[name="mail"],input[name="asunto"],textarea {
+    margin: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: #333;
+}
+textarea{
+    resize: none;
+}
+label,input[type="submit"]{
+    font-size: large;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type="submit"]{
+    padding: 15px 30px;
+    color:white;
+    border:none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: #1d1a1a;
+}
+input[type="submit"]:hover{
+    transform: scale(1.1,1.1);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+input[type="submit"]:active{
+    transform: translate(2px,2px);
+    color:rgb(157, 153, 153);
+}
+
 
 
 

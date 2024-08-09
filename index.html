@@ -90,7 +90,29 @@
         </div>
         <!-- ------------------------------------------------- -->
         <div id="contactame" class="seccion">
-            <p>hola</p>
+            <h3 class="titulo">Enviar Consulta</h3>
+            <form id="contact-form" action="https://formsubmit.co/chinobrian121@gmail.com" method="POST">
+                
+                <label for="mail">Email</label>
+                <input type="email" name="mail"  required><br>
+                
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" required ><br>
+                
+                <label for="mensaje">mensaje</label><br>
+                <textarea name="mensaje" rows="8" placeholder="Escribe tu mensaje aquí..." required></textarea><br>
+                
+                
+                <!-- Previene spam -->
+                <input type="text" name="_honey" style="display:none">
+                
+                <!-- Redirige a la misma página -->
+                <input type="hidden" name="_redirect" value="">
+    
+                <input type="submit" value="Enviar">
+                <p id="resultado"></p>
+            </form>
+            
         </div>
     </main>
     <script src="./dinamico/script.js"></script>  
