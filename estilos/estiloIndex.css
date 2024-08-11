@@ -9,7 +9,7 @@
 nav{
     height: 100vh;
     position:fixed;
-    width: 20em;
+    width: 15em;
     background-color: white;
     padding: 15em 0;
     display: flex;
@@ -36,7 +36,7 @@ nav{
 /* ---------------------- */
 .seccion {
     min-height: 100vh;
-    margin-left:20em;
+    margin-left:15em;
     border-top: 5em solid white;
     border-bottom: 5em solid white;
     background-color: rgb(220, 219, 219);
@@ -44,15 +44,18 @@ nav{
 /* ------------------------------------------------------------ */
 #inicio{
     display:grid;
-    grid-template: 10fr 1fr/ 2fr 1fr;
+    grid-template: 10fr 1fr/ 1fr 1fr;
     
 }
-#inicio section{
- margin: auto;
-
+#info-inicio{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #inicio img{
-    height: 30em;
+    width:60%;
+    min-width: 320px;
     border-radius: 100%;
     box-shadow: 10px 10px 5px rgb(79, 110, 236);
     grid-column-start: 2 ;
@@ -62,10 +65,11 @@ nav{
 
 #inicio section h3{
     color: gray;
-    font-weight: 100;
+    font-weight: 100; 
 }
 #inicio section h1{
     font-size:4em;
+    text-align: center;
 }
 
 #redes-sociales i{ 
@@ -79,6 +83,8 @@ nav{
     margin-left: 1em ;
 }
 #flecha-abajo{
+  grid-column-start: 1;
+  grid-row-start: 2;  
   font-size: xx-large;
   color:black;
   margin-left: 2em;
@@ -100,13 +106,14 @@ nav{
     grid-column-gap: 100px;
 }
 #acercaDeMi img{
-    width: 30em;
+    width: 80%;
+    min-width: 20em; 
     margin: auto;
     box-shadow: 30px 30px 5px rgb(79, 110, 236);
 }
 #acercaDeMi div{
-    height: 25em;
-    width: 30em;
+    min-height: 25em;
+    width: 80%;
     margin: auto;
     display:flex;
     flex-direction: column;
@@ -138,9 +145,9 @@ nav{
 #proyectos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 50px;
+    grid-column-gap: 20px;
     grid-row-gap: 50px;
-    margin: 50px;
+    margin: 20px;
 }
 #portafolio h2{
     text-align: center;
