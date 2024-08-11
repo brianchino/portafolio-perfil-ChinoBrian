@@ -21,7 +21,8 @@ nav{
 .navegacion{
     text-decoration: none;
     color:gray;
-    padding: 2em 0;
+    margin: auto;
+    font-size: x-large;
 }
 
 .navegacion:hover{
@@ -66,6 +67,7 @@ nav{
 #inicio section h3{
     color: gray;
     font-weight: 100; 
+    text-align: center;
 }
 #inicio section h1{
     font-size:4em;
@@ -107,7 +109,7 @@ nav{
 }
 #acercaDeMi img{
     width: 80%;
-    min-width: 20em; 
+    min-width: 300px;
     margin: auto;
     box-shadow: 30px 30px 5px rgb(79, 110, 236);
 }
@@ -138,16 +140,17 @@ nav{
     transition: all 0.5s ease ;
 }
 .titulo{
-    border-bottom: 3px solid rgb(0, 0, 196);
+    text-decoration:underline solid rgb(0, 0, 196);
+    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /* ------------------------------------------------------------ */
 #proyectos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 50px;
-    margin: 20px;
+    grid-column-gap: 18px;
+    grid-row-gap: 40px;
+    margin: 18px;
 }
 #portafolio h2{
     text-align: center;
@@ -157,17 +160,21 @@ nav{
 .proyecto-tarjeta{
     background-color: white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 1em;
     text-decoration: none;
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 .proyecto-tarjeta h3{
     text-align: center;
+    font-size: x-large; 
     height: 2em;
+    font-weight:800;
+    color:rgb(0, 0, 196);
 }
 .proyecto-tarjeta p{
     margin-top:10px;
     color:gray;
+     font-size: large; 
 }
 .proyecto-tarjeta:hover{
     background-color: rgb(42, 57, 223);
@@ -185,13 +192,13 @@ nav{
 /* ------------------------------------------------- */
 #contactame h3 {
     font-size: xx-large;
-    margin: 20px auto;
+    margin:1em auto;
     width:220px;
 }
 #contact-form {
-    width:40em;
+    width:60%;
     background-color: #f0f4f8; 
-    margin:7em auto;
+    margin:auto;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
@@ -231,7 +238,62 @@ input[type="submit"]:active{
     transform: translate(2px,2px);
     color:rgb(157, 153, 153);
 }
+@media (min-width:600px) and (max-width:1024px) {
+    nav{ 
+        width: 10em;
+        font-size: medium;  
+    }
+    .navegacion{
+        font-size: large;
+    }
+    .seccion {  
+        margin-left:10em;
+    }
+    #inicio img{ 
+        min-width: 200px; 
+    }
+    #inicio section h3{
+        font-size:medium;
+    }
+    #inicio section h1{
+        font-size:3em;
+    }
+    
+    #redes-sociales i{ 
+        
+        font-size: 1em;
+    }
+    #acercaDeMi{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-row: 1fr 1fr;
+        
+    }
+     #acercaDeMi img{
+        width: 30%;
+        min-width: 200px;
 
+     }
+    #acercaDeMi div{
+        grid-column: 2 10;
+    } 
+    .proyecto-tarjeta h3{
+        font-size: large;
+    }
+    .proyecto-tarjeta p{
+        font-size: medium;
+        
+    }
+    #proyectos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }    
+    
+}
+@media (min-width:600px) and (max-width:800px) {
+    #proyectos{
+        grid-template-columns: 1fr 1fr;
+    }    
+}
 
 
 
